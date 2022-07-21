@@ -12,5 +12,8 @@ Senha do Jenkins:
 Entrar no container como `root`:
     `docker exec -u 0 -it magical_hellman bash`
 
+Senha do bitbucket para o Jenkins:
+    `docker-jenkins`: `7ukkRAeu9R8DCyKDmbJe`
+
 
 
