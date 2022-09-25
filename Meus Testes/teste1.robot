@@ -23,6 +23,9 @@ Teste dois
 Teste três
     Log    Minha mensagem
 
+Teste quatro
+    Fail    Falha intencional
+
 # Abrir página
 #     RobotSpareBin - Fazer login
 #     Sleep   3s
