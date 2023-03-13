@@ -13,8 +13,21 @@ ${REST_URL}=    https://gorest.co.in/public/v2/users
 ${RESP_ARQ}=    ./arquivo-resp1.txt
 
 *** Tasks ***
+Executar o teste
+    Teste um
+    Teste dois
+    Teste três
+    Teste quatro
+    [Teardown]  Fechar
+
+*** Keywords ***
+Criar Driver
+    Create Webdriver    driver_name=Chrome
+
 Teste um
+    Open Browser  url=https://www.google.com  browser=firefox  options=set_capability("timeouts", {"pageLoad":15000});set_capability("pageLoadStrategy", "eager")
     Log    Minha mensagem
+
 
 Teste dois
     [Tags]    Outras tags, dois
@@ -25,6 +38,9 @@ Teste três
 
 Teste quatro
     Fail    Falha intencional
+
+Fechar
+    Close Browser
 
 # Abrir página
 #     RobotSpareBin - Fazer login
