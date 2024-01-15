@@ -7,9 +7,9 @@ Library         RPA.HTTP
 ${URL}=    http://localhost:8080/index.html
 
 *** Tasks ***
-Executar o teste
+Executar outro teste
     Abrir página
-    Clicar botão
+    Clicar outro botão
     [Teardown]  Fechar
 
 *** Keywords ***
@@ -22,8 +22,8 @@ Abrir página
     Open Browser  url=${URL}  browser=Chrome  options=set_capability("timeouts", {"pageLoad":15000, "implicit": 10000});set_capability("pageLoadStrategy", "none")
     Log    Minha mensagem
 
-Clicar botão
-    Click Element When Visible    locator=css:#btnCor
+Clicar outro botão
+    # Click Element When Visible    locator=css:#btnCor
     Sleep  2s
 
 Fechar
